@@ -96,6 +96,8 @@ O arquivo inclui testes automatizados que verificam:
 - Funcionamento com números decimais
 
 Para executar os testes:
+- Apagar as linhas 13 e 45 do arquivo 'remover_duplicatas.php', o que irá descomentar os testes, tornando assim possível os executar sem problemas
+- Executar o seguinte comando no terminal:
 ```bash
 php remover_duplicatas.php
 ```
