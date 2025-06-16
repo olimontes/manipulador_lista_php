@@ -10,9 +10,9 @@ function remover_duplicatas($lista) {
     //usando array_values para reorganizar o array reindexando as chaves numéricas sequencialmente
     return array_values(array_unique($lista));
 }
-
-/*echo "\n\n=== Testes da Função Remover Duplicatas ===\n\n";
-
+/*
+echo "\n\n=== Testes da Função Remover Duplicatas ===\n\n";
+require_once 'main.php';
 // Teste 1: Lista com duplicatas
 $teste1 = [1, 2, 3, 2, 4, 1, 5, 3];
 echo "Lista original: " . implode(", ", $teste1) . "\n";
@@ -41,6 +41,7 @@ echo "Sem duplicatas: " . implode(", ", $resultado4) . "\n\n";
 $teste5 = [1.5, 2.3, 1.5, 4.7, 2.3, 6.1];
 echo "Lista original: " . implode(", ", $teste5) . "\n";
 $resultado5 = executar_estrategia($teste5, 'remover_duplicatas');
-echo "Sem duplicatas: " . implode(", ", $resultado5) . "\n";*/
+echo "Sem duplicatas: " . implode(", ", $resultado5) . "\n";
+*/
 
 ?>
