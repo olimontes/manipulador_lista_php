@@ -30,7 +30,7 @@ $resultado = ordenar_crescente($numeros);
 echo "Lista ordenada: " . implode(", ", $resultado) . "\n";
 
 
-//exemplos de uso e testes da função remover_duplicatas
+//teste da função remover_duplicatas
 echo "\n\n=== Teste da Função Remover Duplicatas ===\n\n";
 
 //exibindo lista original
