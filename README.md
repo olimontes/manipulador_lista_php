@@ -48,11 +48,63 @@ $resultado = executar_estrategia($lista, 'remover_duplicatas');
 // Resultado: [1, 2, 3, 4, 5]
 ```
 
+## Exemplos de uso
+
+### Exemplo 1: Lista com duplicatas
+```php
+$numeros = [1, 2, 3, 2, 4, 1, 5, 3];
+$sem_duplicatas = executar_estrategia($numeros, 'remover_duplicatas');
+// Entrada: [1, 2, 3, 2, 4, 1, 5, 3]
+// Saída: [1, 2, 3, 4, 5]
+```
+
+### Exemplo 2: Lista com todos elementos iguais
+```php
+$numeros = [7, 7, 7, 7, 7];
+$sem_duplicatas = executar_estrategia($numeros, 'remover_duplicatas');
+// Entrada: [7, 7, 7, 7, 7]
+// Saída: [7]
+```
+
+### Exemplo 3: Lista já sem duplicatas
+```php
+$numeros = [1, 2, 3, 4, 5];
+$sem_duplicatas = executar_estrategia($numeros, 'remover_duplicatas');
+// Entrada: [1, 2, 3, 4, 5]
+// Saída: [1, 2, 3, 4, 5]
+```
+
+### Exemplo 4: Lista vazia
+```php
+$numeros = [];
+$sem_duplicatas = executar_estrategia($numeros, 'remover_duplicatas');
+// Entrada: []
+// Saída: []
+```
 
 ## Características técnicas
 - **Preserva ordem:** Mantém a ordem original dos elementos
 - **Trata casos especiais:** Lista vazia, lista com um elemento, todos elementos iguais
 - **Suporte a tipos:** Funciona com números inteiros e decimais
+
+## Testes
+O arquivo inclui testes automatizados que verificam:
+- Remoção de duplicatas em lista mista
+- Comportamento com lista sem duplicatas
+- Tratamento de lista vazia
+- Lista com todos elementos iguais
+- Funcionamento com números decimais
+
+Para executar os testes:
+```bash
+php remover_duplicatas.php
+```
+
+## Autor
+Roberto Ramos (rrfeisen)
+
+## Branch
+`feature/remover-duplicatas`
 
 ## Testes
 O arquivo inclui testes automatizados que verificam:
