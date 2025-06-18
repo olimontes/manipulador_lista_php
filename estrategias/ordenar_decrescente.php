@@ -21,7 +21,7 @@ function ordenar_decrescente($lista)
 
     return $lista;
 }
-
+/*
 // Testes da função
 echo "=== Testes da função ordenar_decrescente ===\n\n";
 
@@ -59,5 +59,5 @@ $resultado5 = ordenar_decrescente($teste5);
 echo "Teste 5 - Array com um único elemento:\n";
 echo "Array original: " . implode(", ", $teste5) . "\n";
 echo "Array ordenado: " . implode(", ", $resultado5) . "\n";
-
+*/
 ?>
